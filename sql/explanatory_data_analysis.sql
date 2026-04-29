@@ -11,7 +11,7 @@ ORDER BY freqi DESC;
 SELECT
     CASE 
         WHEN Item IS NULL OR Item = '' THEN 'Juice'
-    ELSE Item
+        ELSE Item
     END AS Item_name,
     COUNT(*) AS Total_count
 FROM `cafe-javas256-493214.dataset_cafe.cafe_sales`
